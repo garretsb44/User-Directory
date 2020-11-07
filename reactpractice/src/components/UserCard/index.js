@@ -5,18 +5,21 @@ function UserCard(props) {
   return (
     <div className="card">
       <div className="img-container">
-        <img alt={props.name} src={props.image} />
+        <img alt={props.firstName} src={props.image} />
       </div>
       <div className="content">
         <ul>
           <li>
-            <strong>Name:</strong> {props.name}
+            <strong>First Name:</strong> {props.firstName}
           </li>
           <li>
-            <strong>Occupation:</strong> {props.occupation}
+            <strong>Last Name:</strong> {props.lastName}
           </li>
           <li>
-            <strong>Location:</strong> {props.location}
+            <strong>Email:</strong> {props.email}
+          </li>
+          <li>
+            <strong>Gender:</strong> {props.gender}
           </li>
         </ul>
       </div>
