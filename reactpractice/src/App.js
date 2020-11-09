@@ -17,29 +17,22 @@ class App extends Component {
       .catch(err => console.log(err));
   }
 
-  // handleFirstNameSort = (event) => {
-  //   const value = event.target.value;
-  //   this.setState({ search: value });
-  // };
+  handleMaleSort = (event) => {
+    const male = event.target.value;
+    this.setState({ search: male });
+  };
 
-   // handleLastNameSort = (event) => {
-  //   const value = event.target.value;
-  //   this.setState({ search: value });
-  // };
+   handleFemaleSort = (event) => {
+    const female = event.target.value;
+    this.setState({ search: female });
+  };
 
-   // handleEmailSort = (event) => {
-  //   const value = event.target.value;
-  //   this.setState({ search: value });
-  // };
   
   render() {
     return (
       <Wrapper>
         <Title>User List</Title>
         <SortDropDown
-        handleFirstNameSort={this.handleFirstNameSort}
-        handleLastNameSort={this.handleLastNameSort}
-        handleEmailSort={this.handleEmailSort}
         handleMaleSort={this.handleMaleSort}
         handleFemaleSort={this.handleFemaleSort}
         />
